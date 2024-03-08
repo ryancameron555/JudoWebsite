@@ -1,0 +1,430 @@
+/** @format */
+* {
+  font-family: 'Noto Serif JP', serif;
+}
+
+body {
+  background-color: black;
+  color: black;
+}
+
+h2 {
+  color: black;
+  font-size: 5vw;
+}
+
+p {
+  font-size: 2vh;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.container-fluid {
+  background-color: rgba(211, 42, 42, 0.888);
+  padding: 0;
+}
+#logoImage {
+  height: 8vh;
+  width: auto;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+  border-radius: 15px;
+}
+
+.banner {
+  position: relative;
+  background-color: black;
+  padding: 0px;
+}
+
+/* Style the welcome message */
+.banner h3 {
+  position: absolute;
+  font-size: 7.5vw;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+}
+.banner p {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 20px;
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  top: 90%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(3px);
+  }
+}
+
+.banner p {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 20px;
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  top: 90%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  animation: shake 2s ease-in-out infinite;
+}
+
+.banner p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner p a:hover {
+  color: #ff0000;
+}
+
+/* Style the primary buttons */
+.btn-primary {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 2vh;
+}
+
+/* Change button color on hover */
+.btn-primary:hover {
+  background-color: rgba(211, 42, 42, 0.888);
+}
+
+/* Style the class image */
+#classImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0;
+  opacity: 0.5;
+}
+
+/* Default styles for cards */
+.cardContainer {
+  margin: 2.5%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  font-size: 2vh;
+}
+
+.card {
+  margin: 1vh;
+  height: auto;
+  width: 30%;
+  background-color: whitesmoke;
+  border: 1px solid;
+}
+
+.card img {
+  height: 30vh;
+  width: 100%;
+  padding: 1vh;
+}
+
+.card-text {
+  font-size: 2vh;
+}
+
+.card-title {
+  font-size: 3vh;
+}
+
+.card-subtitle {
+  font-size: 1.5vh;
+}
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media screen and (max-width: 1000px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.basicFooter {
+  font-size: 3vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-family: 'Noto Serif JP', serif;
+  background-color: rgba(211, 42, 42, 0.888);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid;
+  border-radius: 1vw;
+  padding: 1vw;
+  background-color: whitesmoke;
+}
+
+footer h2 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form {
+  flex: 1;
+  max-width: 50%;
+  margin: 0;
+}
+
+.form-control {
+  border: 2px solid black;
+}
+
+.mb-3 {
+  border: 2px solid black;
+  border-radius: 1vw;
+  padding: 1vw;
+}
+
+.mb-3 .form-check {
+  border: 1px black;
+  margin-left: 50vw;
+}
+
+.mb-3 .form-check .form-check-input {
+  border: 1px solid black;
+}
+
+.map {
+  flex: 1;
+  max-width: 50%;
+  margin: 20px;
+  display: block;
+  border: 2px solid black;
+  border-radius: 1vw;
+  height: 60vh;
+  width: 50%;
+  padding: 1vw;
+}
+
+/* Social Media link styling */
+.socials {
+  margin: 2.5vh;
+  height: 5vh;
+  margin-left: 35%;
+}
+
+#coaches {
+  text-align: center;
+  height: 35%;
+  margin-top: 5;
+  width: 97.5%;
+  padding-left: 2.5%;
+}
+
+#coaches h2 {
+  background-color: whitesmoke;
+  margin-top: 5vh;
+  width: 100%;
+  height: auto;
+  color: black;
+  border-radius: 1vw;
+}
+
+#timetable {
+  background-color: whitesmoke;
+  width: 95%;
+  text-align: center;
+  border: 5px solid;
+  border-radius: 1vw;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.table {
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3vh;
+}
+
+#judo {
+  background-color: whitesmoke;
+  margin: 2vh auto;
+  padding: 2vw;
+  border-radius: 1vw;
+  width: 95%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#judo p {
+  width: 90%;
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+/* Style the links */
+a {
+  color: black; /* Set the text color for regular links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Add a smooth transition effect for color */
+}
+
+/* Change link color on hover */
+a:hover {
+  color: black;
+}
+
+#about {
+  background-color: whitesmoke;
+  margin: auto; /* Center horizontally */
+  margin-top: 10vw; /* Top margin */
+  padding: 2vw;
+  border-radius: 1vw;
+  width: 95%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#about p {
+  width: 90%;
+}
+
+#about h2 {
+  width: 100%;
+  height: 10%;
+  color: black;
+  border-radius: 1vw;
+}
+
+#benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: whitesmoke;
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 1vw;
+  font-size: 2vh;
+}
+
+#benefits-list {
+  background-color: whitesmoke;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 2vw;
+  width: 75%;
+}
+
+#benefits-list h2 {
+  color: #d32a2a;
+  text-align: center;
+}
+
+#benefits-list ul {
+  list-style-type: none;
+  padding: 2vw;
+}
+
+#benefits-list li {
+  margin-bottom: 10px;
+  font-size: 4vh;
+}
+
+/* Styles for Judo Throws page */
+.throwsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+  margin-top: 10vh;
+  margin-left: 2.5%;
+  width: 95%;
+  background-color: whitesmoke;
+  padding: 2vw;
+  text-align: center;
+  border-radius: 1vw;
+}
+
+#throw-image {
+  max-width: 100%;
+  height: 50vh;
+  margin-bottom: 10px;
+  border: 5px solid black;
+  border-radius: 1vw;
+  padding: 5vw;
+}
+
+.throwText {
+  border: 4px solid black;
+  border-radius: 1vw;
+  color: black;
+  padding: 1vh;
+  width: 75%;
+}
+
+.throwTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.quote {
+  margin: 2vw;
+  background-color: whitesmoke;
+  width: 95%;
+  border-radius: 1vw;
+  text-align: center;
+  font-style: italic, bold;
+  font-size: 10vh;
+  border: 5px solid red;
+}
+
+blockquote p {
+  font-size: 3vh;
+}

@@ -1,0 +1,246 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hajamie Judo - Information</title>
+    <!-- Style Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- CSS file Link -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div href="index.html#banner" class="container-fluid">
+        <img id="logoImage" src="images/judoImages/logo.png" alt="Logo" />
+        <a class="navbar-brand" href="index.html#banner">Hajamie Judo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Nav - About us -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="info.html#about"
+                    >Hajamie Judo Family</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="info.html#coaches">Coaches</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="info.html#timetable"
+                    >Class Timetable</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="info.html#judo"
+                    >What is Judo?</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="info.html#benefits"
+                    >Benefits of Judo</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Nav - Contact -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#footer">Contact</a>
+            </li>
+            <!-- Nav - Judo Throws -->
+            <li class="nav-item">
+              <a class="nav-link" href="throws.html">Throw Generator</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner Section -->
+    <div class="banner">
+      <img
+        id="classImage"
+        src="images/judoImages/class.jpg"
+        alt="Class photo"
+      />
+      <h3>Welcome to Hajamie Judo!</h3>
+      <p><a href="#contact">Join us for a free trial</a></p>
+    </div>
+
+    <!-- Preview Cards Section -->
+    <div class="cardContainer">
+      <div class="card">
+        <img
+          src="images/judoImages/logo.png"
+          class="card-img-top"
+          alt="Hajamie Judo logo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">About Hajamie Judo</h5>
+          <p class="card-text">
+            We are a growing club with a family-orientated atmosphere. Open to
+            teaching people of all ages,sizes and physical ability.
+          </p>
+          <a href="info.html#coaches" class="btn btn-primary">Read more...</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="images/judoImages/judoThrow.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">What is Judo?</h5>
+          <p class="card-text">
+            The word "judo" translates to "the gentle way," reflecting its
+            principle of using an opponent's force and movements against them.
+          </p>
+          <a href="info.html#judo" class="btn btn-primary">Read more...</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="images/judoImages/benefitsImage.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Benefits of Judo</h5>
+          <p class="card-text">
+            Judo offers numerous benefits, including improved physical
+            fitness,enhanced mental discipline, increased self-confidence, and
+            the development of effective self-defense skills.
+          </p>
+          <a href="info.html#benefits" class="btn btn-primary">Read more...</a>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google maps script -->
+    <script
+      async
+      src="https://www.google.com/maps/place/Judo+Cambridge+-+Hajamie+Judo+331+Athlone+Drive,+Cambridge+3434/@-37.8867199,175.4935654,17z/data=!4m6!3m5!1s0x6d0d41c73c787177:0x3d4b6244f2e71712!8m2!3d-37.8867199!4d175.4935654!16s%2Fg%2F11jg0rjm37"
+    ></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=&loading=async&callback=initMap"
+    ></script>
+    <!-- JS file script link -->
+    <script src="script.js"></script>
+  </body>
+  <!-- Footer Section -->
+  <footer id="footer">
+    <!-- Contact form -->
+    <h2 id="contact">Contact us</h2>
+    <form>
+      <!-- Name input -->
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleName1"
+          aria-describedby="nameHelp"
+        />
+        <!-- Email input -->
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <!-- Message input -->
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Message</label>
+        <input type="text" class="form-control" id="exampleInputMessage1" />
+        <div id="emailHelp" class="form-text">
+          Feel free to ask us anything.
+        </div>
+      </div>
+      <!-- Checkboxes -->
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Enquire as parent/guardian</label
+        >
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Enquire as Student</label
+        >
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <!-- Social Media Links -->
+      <div class="socials">
+        <a href="https://www.facebook.com/HajamieJudo/" target="_blank">
+          <img
+            src="images/icons8-facebook.svg"
+            alt="Facebook Logo"
+            height="75vh"
+          />
+        </a>
+        <a href="https://www.instagram.com/hajamiejudo/" target="_blank">
+          <img
+            src="images/icons8-instagram.svg"
+            alt="Instagram Logo"
+            height="75vh"
+          />
+        </a>
+      </div>
+    </form>
+
+    <!-- Map -->
+    <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.8701246360897!2d175.4909851126171!3d-37.886719871840555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d02714e3c3c63%3A0x92c1c84fdfe0e3d2!2s331%20Athlone%20Drive%2C%20Cambridge%203434!5e0!3m2!1sen!2snz!4v1706417670460!5m2!1sen!2snz"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </footer>
+  <footer class="basicFooter">
+    <p>&copy; 2024 Hajamie Judo</p>
+    <div><p>Cell : 021 026 00852</p></div>
+    <div>
+      <a href="mailto:hajamiejudo@gmail.com">hajamiejudo@gmail.com</a>
+    </div>
+  </footer>
+</html>
